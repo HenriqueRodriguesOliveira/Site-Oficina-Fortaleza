@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina Fortaleza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/icone.jpeg">
+    <video autoplay="true" loop muted>
+        <source src="assets/capa.mp4" type="video/mp4">
+    </video>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">OFICINA FORTALEZA</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="#sobre" onclick="toggleMenu();">Sobre</a></li>
+            <li><a href="#servicos" onclick="toggleMenu();">Serviços</a></li>
+            <li><a href="#fotos" onclick="toggleMenu();">Fotos</a></li>
+            <li><a href="#depoimento" onclick="toggleMenu();">Depoimento</a></li>
+            <li><a href="#contato" onclick="toggleMenu();">Contato</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Você encontrou uma das <br><span>Oficinas Mecânicas</span></h2>
+            <h3>mais queridas de Fortaleza!</h3>
+            <a href="#sobre" class="btn">Sobre nós</a>
+        </div>
+    </section>
+    <section class="about" id="sobre">
+        <div class="heading">
+            <h2>Nossa história!</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>O início...<br><br></h3>
+                <p>A Oficina Fortaleza foi fundada em meados de 1974, pelo mecânico Raimundo Tavim Pinto, tendo a sua principal função  reparar e montar os motores com aquele seu toque de excelência nos veículos da época.<br>
+                    Em poucos anos a oficina começou a se tornar popular, sendo reconhecida por sua mão de obra bastante qualificada e honesta. Com o passar dos anos a oficina foi crescendo e se qualificando de acordo com o mercado,
+                    podendo oferecer diversos serviços como revisão na injeção eletrônica, suspensão, motor e entre outros. 
+                </p>
+            </div>
+            <div class="w50">
+                <img src="assets/sobre.jpg" class="img" width="700">
+            </div>
+        </div>
+    </section>
+    <section class="services" id="servicos">
+            <div class="heading white">
+                <h2>Nossos serviços!</h2>
+                <p></p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                  <img src="assets/icon1.png" width="200px">
+                  <h2>Especialidade</h2>
+                  <p><br>Somos especialistas em veículos da linha leve, tendo conhecimento em carros nacionais e internacionais.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="assets/icon2.png" width="100px">
+                    <h2>Checklist</h2>
+                    <p><br>Fazemos o orçamento do seu veículo pelo valor de R$0,00 reais, oferecendo os melhores valores de peças e mão de obra que cabe no seu bolso.</p>
+                  </div>
+                  <div class="servicesBx">
+                    <img src="assets/icon3.png" width="100px">
+                    <h2>Formas de pagamentos</h2>
+                    <p><br>Caso seja no dinheiro ou débito, terá DESCONTO de 10% nas peças. Parcelamos o seu orçamento até 4x sem juros e 10x com juros.<br>Nossos SERVIÇOS possuem 3 meses de GARANTIA.</p>
+                  </div>
+                  <div class="servicesBx">
+                    <img src="assets/icon4.png" width="100px">
+                    <h2>Andamento</h2>
+                    <p><br>Não se preocupe, informaremos como está o andamento do seu veículo e que horas irá ficar pronto. Caso ocorra imprevisto, contatar o quanto antes.</p>
+                  </div>
+                  <div class="servicesBx">
+                    <img src="assets/icon5.png" width="100px">
+                    <h2>Segurança</h2>
+                    <p><br>O seu veículo está em boas mãos, possuimos tecnologia de ponta, como osciloscópio, teste de vazamento de água, maquinas para injeção eletronica, scanner e entre outras.</p>
+                  </div>
+                  <div class="servicesBx">
+                    <img src="assets/icon6.png" width="100px">
+                    <h2>Horário de funcionamento</h2>
+                    <p><br>Segunda a sexta.<br>7h às 11h<br>13h às 17h</p>
+                  </div>
+            </div>
+    </section>
+
+    <section class="work" id="fotos">    <!---Galeria de Fotos--->
+        <div class="heading ">
+            <h2>GALERIA DE FOTOS</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+            <img src="/assets/car1.jpeg" width="100%" height="100%">
+            </div>
+            <div class="workBx">
+                <img src="/assets/car2.jpeg" width="100%" height="100%">
+        </div>
+        <div class="workBx">
+            <img src="/assets/car3.jpeg" width="100%" height="100%">
+        </div>
+        <div class="workBx">
+            <img src="/assets/car4.jpeg" width="100%" height="100%">
+        </div>
+        <div class="heading">
+            <a href="https://www.instagram.com/oficinafortaleza/?hl=pt-br" class="btn">Veja mais</a>
+        </div>
+    </section>
+
+    <section class="testimonial" id="depoimento">
+      <div class="heading">
+        <h2>DEPOIMENTOS</h2>
+        <p>De acordo com os comentários do Google.</p>
+      </div>
+      <div class="content">
+          <div class="testimonialBx">
+              <p>"Um lugar em que podemos confiar; excelente serviço com ótimos preços."</p>
+              <h3>Cláudia Dantas<br><spam>Cliente</spam></h3> 
+          </div>     
+            <div class="testimonialBx">
+              <p>"Atendimento excelente e com muita transparência por parte dos gestores e funcionários."</p>
+              <h3>Thallysson Jardel<br><spam>Cliente</spam></h3>
+            </div>
+       <div class="testimonialBx">
+        <p>"Proficionalismo , e trabalho rápido, oque precisamos nos dias atuais, grupo de colaboradores capacitados e eficientes, parabéns."</p>
+        <h3>Francio Wicher<br><spam>Cliente</spam></h3>
+       </div>
+       <div class="testimonialBx">
+        <p>"Excelente. Serviço de primeira e preço justo"</p>
+        <h3>Ricardo César Vasconcelos Sousa<br><spam>Cliente</spam></h3>
+      </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <div class="heading white">
+            <h2>Contatos</h2>
+            <p></p>
+          </div>
+          <div class="content">
+           <div class="contactInfo">
+             <h3>Informação de contatos</h3>
+                <div class="contactInfoBox">
+                   <div class="box">
+                     <div class="icon">
+                       <i class="fa fa-map-marker"></i>
+                          </div>
+                          <div class="text">
+                            <h3>Endereços</h3>
+                            <p>Rua Francisco Uchoa 755,<br>Fortaleza,Ceará,<br>60356322</p>
+                            </div>
+                            </div>
+                            <div class="box">
+                             <div class="icon">
+                                <i class="fa fa-phone"></i>
+                             </div>
+                             <div class="text">
+                                 <h3>Fone</h3>
+                                 <p>(85)32355761</p>
+                          </div>
+                      </div>
+                      <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>oficinafortaleza74@bol.com.br</p>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+              <div class="formBx">
+                <form>
+                    <h3>Mande mensagem, caso precise.</h3>
+                    <input type="text" name="" placeholder="Nome completo">
+                    <input type="email" name="" placeholder="Seu e-mail">
+                    <textarea placeholder="Escreva a sua mensagem..."></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+          </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright &copy; 2022 Henrique Rodrigues.Todos direitos reservados.</p>
+        </div>
+    <script type="text/javascript">
+       window.addEventListener('scroll', function(){
+           var header = document.querySelector('header');
+           header.classList.toggle('sticky', window.scrollY > 0);
+       });
+
+       function toggleMenu(){
+           var menuToggle = document.querySelector('.toggle');
+           var menu = document.querySelector('.menu');
+           menuToggle.classList.toggle('active');
+           menu.classList.toggle('active');
+       }
+    </script>
+</body>
+</html>
