@@ -506,9 +506,6 @@ header.sticky ul li a
         z-index: 1000;
     }
 
-    .img{
-        display: none;
-    }
     .menu
     {
         position: fixed;
@@ -567,11 +564,12 @@ header.sticky ul li a
    }
    .banner h2
    {
-    font-size: 1.5em;
+    font-size: 2.0em;
+    font-weight: 700;
    }
    .banner h3
    {
-    font-size: 1em;
+    font-size: 2.3em;
    }
    .btn
    {
@@ -584,7 +582,7 @@ header.sticky ul li a
    }
    .contentBx h3 
    {
-    font-size: 20px;
+    font-size: 36px;
     margin-bottom: 10px;
    }
    .content
@@ -594,6 +592,7 @@ header.sticky ul li a
    .w50
    {
     margin-bottom: 20px;
+    padding: 13px;
     }
     .services .content .servicesBx
     {
@@ -634,6 +633,6 @@ header.sticky ul li a
     }
     section
     {
-        padding: 100px 20px;
+        padding: 77px 20px;
     }
 }
