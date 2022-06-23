@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/assets/icone.jpeg">
-    <video autoplay="true" loop muted>
-        <source src="assets/capa.mp4" type="video/mp4">
-    </video>
 </head>
 <body>
+
+    <!---NAVBAR--->
     <header>
         <a href="#" class="logo">OFICINA FORTALEZA</a>
         <div class="toggle" onclick="toggleMenu();"></div>
         <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Inicio</a></li>
-            <li><a href="#sobre" onclick="toggleMenu();">Sobre</a></li>
-            <li><a href="#servicos" onclick="toggleMenu();">Serviços</a></li>
-            <li><a href="#fotos" onclick="toggleMenu();">Fotos</a></li>
-            <li><a href="#depoimento" onclick="toggleMenu();">Depoimento</a></li>
-            <li><a href="#contato" onclick="toggleMenu();">Contato</a></li>
+            <li><a href="#home" onclick="toggleMenu();"><p class="menu-lt">Início</p></a></li>
+            <li><a href="#sobre" onclick="toggleMenu();"><p class="menu-lt">Sobre</p></a></li>
+            <li><a href="#servicos" onclick="toggleMenu();"><p class="menu-lt">Serviços</p></a></li>
+            <li><a href="#fotos" onclick="toggleMenu();"><p class="menu-lt">Fotos</p></a></li>
+            <li><a href="#avaliacoes" onclick="toggleMenu();"><p class="menu-lt">Depoimento</p></a></li>
+            <li><a href="#contato" onclick="toggleMenu();"><p class="menu-lt">Contato</p></a></li>
         </ul>
     </header>
+
+    <!---PRINCIPAL--->
     <section class="banner" id="home">
         <div class="textBx">
             <h2>Você encontrou uma das <br><span>Oficinas Mecânicas</span></h2>
@@ -32,14 +33,58 @@
             <a href="#sobre" class="btn">Sobre nós</a>
         </div>
     </section>
+
+    <!---CARROSEL MARCAS--->
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+            <img src="/assets/gm.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/hyundai.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/nissan.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/peugeot.jpg" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/toyota.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/vw.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/gm.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/hyundai.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/nissan.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/peugeot.jpg" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/toyota.png" height="100" width="100">
+        </div>
+        <div class="slide">
+            <img src="/assets/vw.png" height="100" width="100">
+        </div>
+      </div>
+    </div>
+
+    <!---SOBRE-->
     <section class="about" id="sobre">
         <div class="heading">
             <h2>Nossa história!</h2>
         </div>
         <div class="content">
             <div class="contentBx w50">
-                <h3>O início...<br><br></h3>
-                <p>A Oficina Fortaleza foi fundada em meados de 1974, pelo mecânico Raimundo Tavim Pinto, tendo a sua principal função  reparar e montar os motores com aquele seu toque de excelência nos veículos da época.<br>
+                <h3 class="titulo-sobre">O início...</h3>
+                <p class="historia">A Oficina Fortaleza foi fundada em meados de 1974, pelo mecânico Raimundo Tavim Pinto, tendo a sua principal função  reparar e montar os motores com aquele seu toque de excelência nos veículos da época.<br>
                     Em poucos anos a oficina começou a se tornar popular, sendo reconhecida por sua mão de obra bastante qualificada e honesta. Com o passar dos anos a oficina foi crescendo e se qualificando de acordo com o mercado,
                     podendo oferecer diversos serviços como revisão na injeção eletrônica, suspensão, motor e entre outros. 
                 </p>
@@ -49,6 +94,8 @@
             </div>
         </div>
     </section>
+
+    <!---NOSSOS SERVIÇOS--->
     <section class="services" id="servicos">
             <div class="heading white">
                 <h2>Nossos serviços!</h2>
@@ -88,55 +135,74 @@
             </div>
     </section>
 
-    <section class="work" id="fotos">    <!---Galeria de Fotos--->
-        <div class="heading ">
-            <h2>GALERIA DE FOTOS</h2>
-            <p></p>
+    <!---GALERIA DE FOTOS--->
+    <h1 class="txt-fotos">Galeria de fotos</h1>
+    <section class="container-galeria" id="fotos">
+        <div class="item-galeria w-2 h-2">
+            <img src="/assets/img-1.jpeg" alt="Imagem-1" class="img-galeria"/>
         </div>
-        <div class="content">
-            <div class="workBx">
-            <img src="/assets/car1.jpeg" width="100%" height="100%">
-            </div>
-            <div class="workBx">
-                <img src="/assets/car2.jpeg" width="100%" height="100%">
+        <div class="item-galeria w-2 h-1">
+            <img src="/assets/img-2.jpeg" alt="Imagem-1" class="img-galeria"/>
         </div>
-        <div class="workBx">
-            <img src="/assets/car3.jpeg" width="100%" height="100%">
+        <div class="item-galeria w-1 h-2">
+            <img src="/assets/img-3.jpeg" alt="Imagem-1" class="img-galeria"/>
         </div>
-        <div class="workBx">
-            <img src="/assets/car4.jpeg" width="100%" height="100%">
+        <div class="item-galeria w-1 h-1">
+            <img src="/assets/img-4.jpeg" alt="Imagem-1" class="img-galeria"/>
         </div>
-        <div class="heading">
-            <a href="https://www.instagram.com/oficinafortaleza/?hl=pt-br" class="btn">Veja mais</a>
+        <div class="item-galeria w-2 h-2">
+            <img src="/assets/img-5.jpeg" alt="Imagem-1" class="img-galeria"/>
+        </div>
+        <div class="item-galeria w-1 h-2">
+            <img src="/assets/img-6.jpeg" alt="Imagem-1" class="img-galeria"/>
+        </div>
+        <div class="item-galeria w-1 h-1">
+            <img src="/assets/img-7.jpeg" alt="Imagem-1" class="img-galeria"/>
+        </div>
+        <div class="item-galeria w-1 h-1">
+            <img src="/assets/img-8.jpeg" alt="Imagem-1" class="img-galeria"/>
+        </div>
+        <div class="item-galeria w-1 h-1">
+            <img src="/assets/img-9.jpeg" alt="Imagem-1" class="img-galeria"/>
         </div>
     </section>
 
-    <section class="testimonial" id="depoimento">
-      <div class="heading">
-        <h2>DEPOIMENTOS</h2>
-        <p>De acordo com os comentários do Google.</p>
-      </div>
-      <div class="content">
-          <div class="testimonialBx">
-              <p>"Um lugar em que podemos confiar; excelente serviço com ótimos preços."</p>
-              <h3>Cláudia Dantas<br><spam>Cliente</spam></h3> 
-          </div>     
-            <div class="testimonialBx">
-              <p>"Atendimento excelente e com muita transparência por parte dos gestores e funcionários."</p>
-              <h3>Thallysson Jardel<br><spam>Cliente</spam></h3>
-            </div>
-       <div class="testimonialBx">
-        <p>"Proficionalismo , e trabalho rápido, oque precisamos nos dias atuais, grupo de colaboradores capacitados e eficientes, parabéns."</p>
-        <h3>Francio Wicher<br><spam>Cliente</spam></h3>
-       </div>
-       <div class="testimonialBx">
-        <p>"Excelente. Serviço de primeira e preço justo"</p>
-        <h3>Ricardo César Vasconcelos Sousa<br><spam>Cliente</spam></h3>
-      </div>
+    <!---DEPOIMENTOS--->
+    <section id="avaliacoes" >
+     <h1 class="txt-fotos">Avalições</h1>
+      <div class="container-card">
+        <div class="card-av">
+          <h4 class="nome-av">Erabaldo Junior</h4>
+          <img src="/assets/estrela.png" alt="estrelas" class="estrelas-img">
+          <p>"Excelente serviço, qualidade nota 10, preço justo e de confiança, indico sempre."
+          </p>
+        </div>
 
+        <div class="card-av">
+            <h4 class="nome-av">Artesã Oficina</h4>
+            <img src="/assets/estrela.png" alt="estrelas" class="estrelas-img">
+            <p>"Excelente atendimento e serviço de qualidade."</p>
+          </div>
+
+          <div class="card-av">
+            <h4 class="nome-av">Felipe Barroso</h4>
+            <img src="/assets/estrela.png" alt="estrelas" class="estrelas-img">
+            <p>"Equipe top! Marcão à frente da equipe, trabalhando com honestidade
+                 e dedicação,sempre trazendo e fazendo o melhor para os seus clientes. 
+                 Essa é show!!!"</p>
+          </div>
+
+          <div class="card-av">
+            <h4 class="nome-av">Francio Wicher</h4>
+            <img src="/assets/estrela.png" alt="estrelas" class="estrelas-img">
+            <p>"Proficionalismo , e trabalho rápido, oque precisamos nos dias atuais, 
+                grupo de colaboradores capacitados e eficientes, parabéns"</p>
+          </div>
       </div>
+      <a class="btn" href="https://www.google.com/search?q=oficina+fortaleza&oq=ofic&aqs=chrome.0.69i59j69i57j69i59j0i512j69i60l4.3570j1j4&sourceid=chrome&ie=UTF-8#lrd=0x7c74bd2904c0111:0x71ca89cb0abd6924,1,,,">veja mais</a>
     </section>
 
+    <!---CONTATO--->
     <section class="contact" id="contato">
         <div class="heading white">
             <h2>Contatos</h2>
@@ -161,7 +227,8 @@
                              </div>
                              <div class="text">
                                  <h3>Fone</h3>
-                                 <p>(85)32355761</p>
+                                 <p>(85)3235-5761</p>
+                                 <p>(85)98203-3253</p>
                           </div>
                       </div>
                       <div class="box">
@@ -171,6 +238,15 @@
                         <div class="text">
                             <h3>Email</h3>
                             <p>oficinafortaleza74@bol.com.br</p>
+                        </div>
+                     </div>
+                     <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Instagram</h3>
+                            <a href="https://www.instagram.com/oficinafortaleza/" target="_blank" style="color: white;text-decoration: none;">@oficinafortaleza</a>
                         </div>
                      </div>
                   </div>
@@ -186,9 +262,13 @@
             </div>
           </div>
     </section>
+
+    <!---RODAPÉ--->
     <div class="copyright">
-        <p>Copyright &copy; 2022 Henrique Rodrigues.Todos direitos reservados.</p>
+        <p>Copyright &copy; 2022 Oficina Fortaleza.Todos direitos reservados.</p>
         </div>
+
+    <!---JAVASCRIPT--->
     <script type="text/javascript">
        window.addEventListener('scroll', function(){
            var header = document.querySelector('header');

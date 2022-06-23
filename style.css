@@ -1,5 +1,6 @@
 /* Estilo CSS3 */
 @import url('https://fonts.googleapis.com/css2? family = Poppins: wght @ 500 & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * 
 {
@@ -9,21 +10,21 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+
+p
+{
+    font-family: 'Montserrat', sans-serif;
+}
 /*---------------------------------------------------------------- Frase topo -------------*/
 section
 {
     padding: 100px;
 }
 
-video
-{
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+.principal{
+   z-index: 0;
 }
+
 .banner 
 {
     position: relative;
@@ -33,7 +34,42 @@ video
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url(/assets/car3.jpeg);
     
+}
+
+.menu-lt:hover{
+    color: red;
+    transition: all 0.2s;
+}
+
+/*---------------------------------------------------------------- scroll infinit -------------*/
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 4));
+    }
+}
+.slider{
+    top: 40px;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.slider .slide-track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide{
+    height: 100px;
+    margin: 0 50px;
+    width: 250px;
 }
 /*------------------------------------------------------- Background do topo -----------*/
 
@@ -41,7 +77,7 @@ video
 {
     font-size: 3rem;
     color: #fff;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
     font-weight: 500;
     line-height: 1.5em;
 }
@@ -55,7 +91,7 @@ video
     font-size: 3rem;
     color: #fff;
     font-weight: 500;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);  
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.2);  
 }
 .btn
 {
@@ -71,6 +107,12 @@ video
     font-style: 18px;
     font-weight: 500;
     border-radius: 2px;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    box-shadow: 1px 1px 5px rgb(0,0,0, 0.5);
+    transition: all 0.5s;
 }
 header
 {
@@ -137,9 +179,13 @@ header.sticky ul li a
 .heading h2
 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   padding: 30px;
+}
 
+.titulo-sobre
+{
+    margin: 30px 0;
 }
 /*----------------------------- Sobre ------------------------------*/
 .content
@@ -147,30 +193,40 @@ header.sticky ul li a
     display: flex;
     justify-content: space-between;
 }
+
 .conterBx
 {
     padding-right: 30px; 
 }
+
 .conterBx h3
 {
     font-size: 30px;
     margin-bottom: 10px;
 }
+
 .w50 {
     min-width: 50%;
     padding: 70px;
 }
+
 .w50 h3
 {
-    font-size:40px;
+    font-size:50px;
 }
+
+.historia {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .img
 {
     max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.178);
+    box-shadow: 10px 10px 0px#000;
 
 }
+
 /*---------------------------- Bloco de informações ---------------*/
 .services
 {
@@ -179,6 +235,7 @@ header.sticky ul li a
 .heading.white
 {
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 .services .content
 {
@@ -212,53 +269,136 @@ header.sticky ul li a
     font-weight: 600;
 }
 /*----------------------------GALERIA DE FOTOS------------*/
-.work .content        
+.txt-fotos
 {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 80px;
+    font-size: 3em;
+    font-weight: 700;
+
 }
-.work .content .workBx
+.container-galeria
 {
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 300px;
+    padding: 5px;
+    grid-gap: 5px;
+}
+
+.item-galeria
+{
+    position: relative;
+}
+
+.item-galeria .img-galeria
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-galeria .title-galeria
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.4);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
     padding: 10px;
+    font-size: 16px;
 }
+
+.h-1
+{
+    grid-row: span 1;
+}
+
+.h-2
+{
+    grid-row: span 2;
+}
+
+.w-1
+{
+    grid-column: span 1;
+}
+
+.w-2
+{
+    grid-column: span 2;
+}
+
+@media(max-width: 768px){
+    .container-galeria
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 50vh;
+    }
+    .h-2
+    {
+        grid-row: span 1;
+    }
+    .w-2
+    {
+        grid-column: span 1;
+    }
+}
+
 /*----------------------------Depoimento---------------*/
-.testimonial .content
+.container-card
 {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items:flex-end;
+
 }
-.testimonial .content .testimonialBx
+
+.card-av
 {
-    min-width: calc(50% - 40px);
-    padding: 60px 40px;
-    margin: 20px;
-    background: rgb(142, 39, 39);
-    border-radius: 3px;
+    background-color: #FFF;
+    height: 230px;
+    width: 400px;
+    padding: 30px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.093);
 }
-.testimonial .content .testimonialBx p
+
+.nome-av
 {
-    color: #fff;
-    font-size: italic;
-    font-style: 16px;
-    font-weight: 300;
-}
-.testimonial .content .testimonialBx h3
-{
-    margin-top: 40px;
-    text-align: end;
-    color: #fff;
-    font-weight: 20px;
-    line-height: 1em;
-}
-.testimonial .content .testimonialBx h3 span
-{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 20px;
     
 }
+.estrelas-img
+{
+    width: 100px;
+    margin: 5px 0;
+}
+
+.avaliacoes
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 768px){
+    .container-card{
+      display: flex;
+      flex-direction: column;
+    }
+    .card-av{
+        width: 310px;
+    }
+}
+
+/*-----------------------Blog----------*/
+
+
+
 /*-----------------------Contatos e formulário----------*/
 .contact
 {
