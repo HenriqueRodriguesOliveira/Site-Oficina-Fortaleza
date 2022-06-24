@@ -34,7 +34,7 @@ section
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(/assets/car3.jpeg);
+    background-image: url(/svg/principal.svg);
     
 }
 
@@ -249,7 +249,7 @@ header.sticky ul li a
     padding: 40px 20px;
     background: #222;
     color: #fff;
-    max-width: 340px;
+    width: 340px;
     margin: 20px;
     text-align: center;
     transition:0.5s;
